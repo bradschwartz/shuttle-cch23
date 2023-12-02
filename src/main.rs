@@ -1,18 +1,10 @@
-use rocket::{get, routes, http::Status};
+use rocket::routes;
 
-#[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
-}
-
-#[get("/-1/error")]
-fn forced_500() -> Status {
-    Status::InternalServerError
-}
+mod warmup;
 
 #[shuttle_runtime::main]
 async fn main() -> shuttle_rocket::ShuttleRocket {
-    let rocket = rocket::build().mount("/", routes![index, forced_500]);
+    let rocket = rocket::build().mount("/", routes![warmup::index, warmup::forced_500]);
 
     Ok(rocket.into())
 }
