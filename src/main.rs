@@ -13,6 +13,7 @@ async fn main() -> shuttle_rocket::ShuttleRocket {
             warmup::forced_500,
             day1::cube_bits,
             day4::strength,
+            day4::contest,
         ],
     );
 
