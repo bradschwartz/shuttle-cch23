@@ -3,6 +3,7 @@ use rocket::routes;
 mod day1;
 mod day4;
 mod day6;
+mod day7;
 mod warmup;
 
 #[shuttle_runtime::main]
@@ -16,6 +17,7 @@ async fn main() -> shuttle_rocket::ShuttleRocket {
             day4::strength,
             day4::contest,
             day6::count_elf,
+            day7::decode,
         ],
     );
 

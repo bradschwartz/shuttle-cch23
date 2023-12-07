@@ -238,6 +238,7 @@ dependencies = [
  "serde_json",
  "shuttle-rocket",
  "shuttle-runtime",
+ "simple-base64",
  "tokio",
 ]
 
@@ -1903,6 +1904,11 @@ checksum = "d8229b473baa5980ac72ef434c4415e70c4b5e71b423043adb4ba059f89c99a1"
 dependencies = [
  "libc",
 ]
+
+[[package]]
+name = "simple-base64"
+version = "0.23.2"
+source = "git+https://github.com/drogus/simple-base64-rs#62f853e6246affe7dfa9aa5d9b82936725ccb686"
 
 [[package]]
 name = "simple_asn1"

@@ -10,4 +10,5 @@ serde = { version = "1.0.193", features = ["derive"] }
 serde_json = "1.0.108"
 shuttle-rocket = "0.34.0"
 shuttle-runtime = "0.34.0"
+simple-base64 = { git = "https://github.com/drogus/simple-base64-rs", version = "0.23.2" }
 tokio = "1.26.0"
